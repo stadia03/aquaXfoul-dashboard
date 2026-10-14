@@ -23,8 +23,9 @@ services:
   # -----------------------------------------------------------
   # Frontend Web App (React + Vite)
   # -----------------------------------------------------------
-  - type: static
+  - type: web
     name: aquaxfoul-frontend
+    runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
